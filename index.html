@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/3d96b58fae.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="container">
+        <nav class="primary-navigation flex justify-center">
+          <ul role="list" class="nav-list flex flow-right">
+            <li class="nav-list-item flex flow-right">
+              <p class="fw-bold fs-body">Ми в соціальних мережах:</p>
+              <ul role="list" class="flex" style="gap: 1rem">
+                <li>
+                  <a class="text-accent-500 fw-bold" href=""
+                    ><i class="fa-solid fa-paper-plane"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-accent-500 fw-bold" href=""
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="text-accent-500 fw-bold" href=""
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="flex align-center">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+              <button
+                class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+              >
+                (099) 111 22 33 <i class="fa-solid fa-chevron-down"></i>
+              </button>
+            </li>
+          </ul>
+          <ul role="list" class="nav-list flex flow-not-a-last menu">
+            <li class="fw-bold fs-body"><a href="#">ГОЛОВНА</a></li>
+            <li class="fw-bold fs-body"><a href="#">АКЦІЇ</a></li>
+            <li class="fw-bold fs-body"><a href="#">ДОСТАВКА ТА ОПЛАТА</a></li>
+            <li class="fw-bold fs-body"><a href="#">ПРО НАС</a></li>
+            <li class="fw-bold fs-body"><a href="#">КОНТАКТИ</a></li>
+          </ul>
+          <button
+            class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22 toggle-menu-button"
+          >
+            Меню <i class="fa-solid fa-chevron-down"></i>
+          </button>
+        </nav>
+      </div>
+
+      <div class="separator"></div>
+
+      <div class="container">
+        <nav
+          class="secondary-navigation flex justify-between align-center"
+          style="gap: 1rem"
+        >
+          <div>
+            <button
+              class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22 toggle-category-button"
+            >
+              Категорії <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <ul role="list" class="flex flow-not-a-last category">
+              <li>
+                <button
+                  class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+                >
+                  Дивани <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+                >
+                  ліжка <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+                >
+                  Крісла <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+                >
+                  комоди <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+                >
+                  шафи <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+              <li>
+                <button
+                  class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
+                >
+                  Кухня <i class="fa-solid fa-chevron-down"></i>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="logo flex">
+            <img href="" src="images/Group.svg" /><span
+              class="fw-bold fs-primary-heading logo-span"
+              >Furniture.test</span
+            >
+          </div>
+
+          <div class="flex flow-not-a-last align-center" style="gap: 1rem">
+            <div class="flex">
+              <i class="fa-solid fa-cart-shopping cart-logo"></i>
+              <span class="fw-bold fs-body uppercase cart-span">Кошик</span>
+            </div>
+            <div class="button bg-neutral-500">
+              <a class="text-white uppercase" href="">Замовити дзвінок</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="margin-bottom" style="--margin-bottom: 6rem">
+        <div class="container">
+          <div class="image-wrap">
+            <div
+              class="newbie bg-neutral-100 push-right flex flex-column justify-center align-center"
+            >
+              <h1
+                class="fs-XXL fw-bold margin-bottom"
+                style="--margin-bottom: 5rem"
+              >
+                Новинка!
+              </h1>
+              <h3 class="fs-primary-heading fw-bold align-text-center">
+                Ліжко Ornella
+              </h3>
+              <p
+                class="fs-primary-heading align-text-center margin-bottom"
+                style="--margin-bottom: 2rem; padding: 1rem"
+              >
+                Це новий рівень комфортного сну
+              </p>
+              <a href="" class="button bg-neutral-500">Детальніше</a>
+              <div class="flex flex-column centred-flex">
+                <p class="fs-secondary-body fw-bold align-text-center">
+                  <span class="fs-primary-heading">01</span>/<span class=""
+                    >04</span
+                  >
+                </p>
+                <div class="slide_control flex justify-center">
+                  <div
+                    class="flex flex-column align-center round-button bg-neutral-100 transparent-bg"
+                  >
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </div>
+                  <div
+                    class="flex flex-column align-center round-button bg-neutral-900 text-white"
+                  >
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-bottom" style="--margin-bottom: 6rem">
+        <div class="container relative" style="min-height: 400px">
+          <div class="flex flex-column centred-flex">
+            <div
+              class="flex margin-bottom justify-center"
+              style="--margin-bottom: 1.5rem"
+            >
+              <div class="accent_heading flex" style="align-items: center">
+                <h2 class="fs-secondary-heading fw-bold highInd">
+                  Наші переваги
+                </h2>
+              </div>
+            </div>
+
+            <div class="track relative">
+              <div class="carusel flex justify-between currentSlide">
+                <div
+                  class="carusel-item background-truck flex flex-column push-bottom"
+                >
+                  <div class="widthFull transition">
+                    <h3
+                      class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                    >
+                      Меблі преміум класу
+                    </h3>
+                    <p class="text-accent-400">
+                      За 14 років на ринку меблів для дому ми стали надійними
+                      партнерами на ринку Вінницької області та України
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="carusel-item background-truck flex flex-column push-bottom"
+                >
+                  <div class="widthFull transition">
+                    <h3
+                      class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                    >
+                      Надійність
+                    </h3>
+                    <p class="text-accent-400">
+                      За 14 років на ринку меблів для дому ми стали надійними
+                      партнерами на ринку Вінницької області та України
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="carusel-item background-truck flex flex-column push-bottom"
+                >
+                  <div class="widthFull transition">
+                    <h3
+                      class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left"
+                    >
+                      Безкоштовна доставка
+                    </h3>
+                    <p class="text-accent-400">
+                      За 14 років на ринку меблів для дому ми стали надійними
+                      партнерами на ринку Вінницької області та України
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-bottom" style="--margin-bottom: 6rem">
+        <div class="container">
+          <div
+            class="margin-bottom flex justify-center"
+            style="--margin-bottom: 1.5rem"
+          >
+            <div class="accent_heading flex" style="align-items: center">
+              <h2 class="fs-secondary-heading fw-bold highInd">
+                Категорії товарів
+              </h2>
+            </div>
+          </div>
+          <ul
+            role="list"
+            class="category-list flex justify-between margin-bottom"
+            style="gap: 1rem; --margin-bottom: 1.5rem"
+          >
+            <li class="category-list-item flex flex-column align-center">
+              <img
+                class="category-item-image"
+                src="images/living-room 1.svg"
+                alt=""
+              />
+              <p
+                class="category-item-heading fs-secondary-body fw-bold uppercase"
+              >
+                Дивани
+              </p>
+            </li>
+            <li class="category-list-item flex flex-column align-center">
+              <img
+                class="category-item-image"
+                src="images/armchair.svg"
+                alt=""
+              />
+              <p
+                class="category-item-heading fs-secondary-body fw-bold uppercase"
+              >
+                Крісла
+              </p>
+            </li>
+            <li class="category-list-item flex flex-column align-center">
+              <img
+                class="category-item-image"
+                src="images/wardrobe (1) 1.svg"
+                alt=""
+              />
+              <p
+                class="category-item-heading fs-secondary-body fw-bold uppercase"
+              >
+                комоди
+              </p>
+            </li>
+            <li class="category-list-item flex flex-column align-center">
+              <img
+                class="category-item-image"
+                src="images/wardrobe 1.svg"
+                alt=""
+              />
+              <p
+                class="category-item-heading fs-secondary-body fw-bold uppercase"
+              >
+                Шафи
+              </p>
+            </li>
+            <li
+              class="category-list-item flex flex-column justify-center align-center"
+            >
+              <img
+                class="category-item-image"
+                src="images/kitchen 1.svg"
+                alt=""
+              />
+              <p
+                class="category-item-heading fs-secondary-body fw-bold uppercase"
+              >
+                Кухня
+              </p>
+            </li>
+            <li class="category-list-item flex flex-column align-center">
+              <img
+                class="category-item-image dark-filter dark-filter-2"
+                src="images/bedroom 1.svg"
+                alt=""
+              />
+              <p
+                class="category-item-heading fs-secondary-body fw-bold uppercase"
+              >
+                Ліжка
+              </p>
+            </li>
+          </ul>
+          <div>
+            <ul role="list" class="product-list grid column-of-three">
+              <li class="product-list-item relative">
+                <a href="">
+                  <div class="product-list-item-image">
+                    <img src="images/Rectangle 140.png" alt="" />
+                  </div>
+                  <div class="state-box absolute">
+                    <p class="product-state bg-neutral-900 uppercase">
+                      Новинка
+                    </p>
+                  </div>
+                  <div
+                    class="flex justify-between fw-bold fs-secondary-body hover"
+                  >
+                    <p class="uppercase">Ліжко Рамона</p>
+                    <div class="flex">
+                      <p style="margin-right: 10px">8 999 грн</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product-list-item relative">
+                <a href="">
+                  <div class="product-list-item-image">
+                    <img src="images/Rectangle 140.png" alt="" />
+                  </div>
+                  <div class="state-box absolute">
+                    <p class="product-state bg-neutral-900 uppercase">
+                      Новинка
+                    </p>
+                    <p
+                      class="product-state bg-accent-400 uppercase line-height-22"
+                    >
+                      Акція
+                    </p>
+                  </div>
+                  <div class="flex justify-between fw-bold fs-secondary-body">
+                    <p class="uppercase">Ліжко Рамона</p>
+                    <div class="flex">
+                      <p class="text-accent-600" style="margin-right: 10px">
+                        8 999 грн
+                      </p>
+                      <p
+                        class="text-accent-500 fs-body text-decoration-through"
+                      >
+                        8 999 грн
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product-list-item relative">
+                <a href="">
+                  <div class="product-list-item-image">
+                    <img src="images/Rectangle 140.png" alt="" />
+                  </div>
+                  <div class="state-box absolute"></div>
+                  <div class="flex justify-between fw-bold fs-secondary-body">
+                    <p class="uppercase">Ліжко Рамона</p>
+                    <div class="flex">
+                      <p style="margin-right: 10px">8 999 грн</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product-list-item relative">
+                <a href="">
+                  <div class="product-list-item-image">
+                    <img src="images/Rectangle 140.png" alt="" />
+                  </div>
+                  <div class="state-box absolute">
+                    <p class="product-state bg-neutral-900 uppercase">
+                      Новинка
+                    </p>
+                  </div>
+                  <div class="flex justify-between fw-bold fs-secondary-body">
+                    <p class="uppercase">Ліжко Рамона</p>
+                    <div class="flex">
+                      <p style="margin-right: 10px">8 999 грн</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product-list-item relative">
+                <a href="">
+                  <div class="product-list-item-image">
+                    <img src="images/Rectangle 140.png" alt="" />
+                  </div>
+                  <div class="state-box absolute"></div>
+                  <div class="flex justify-between fw-bold fs-secondary-body">
+                    <p class="uppercase">Ліжко Рамона</p>
+                    <div class="flex">
+                      <p style="margin-right: 10px">8 999 грн</p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="product-list-item relative">
+                <a href="">
+                  <div class="product-list-item-image">
+                    <img src="images/Rectangle 140.png" alt="" />
+                  </div>
+                  <div class="state-box absolute">
+                    <p class="product-state bg-neutral-900 uppercase">
+                      ХІт продаж
+                    </p>
+                    <p class="product-state bg-accent-400 uppercase">Акція</p>
+                  </div>
+                  <div class="flex justify-between fw-bold fs-secondary-body">
+                    <p class="uppercase">Ліжко Рамона</p>
+                    <div class="flex">
+                      <p style="margin-right: 10px">8 999 грн</p>
+                      <p
+                        class="text-accent-500 fs-body text-decoration-through"
+                      >
+                        8 999 грн
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex justify-center">
+            <a href="" class="button bg-neutral-500">Детальніше</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-bottom" style="--margin-bottom: 6rem">
+        <div
+          class="margin-bottom flex justify-center"
+          style="--margin-bottom: 1.5rem"
+        >
+          <div class="accent_heading flex" style="align-items: center">
+            <h2 class="fs-secondary-heading fw-bold highInd">Про нас</h2>
+          </div>
+        </div>
+
+        <div
+          class="container grid"
+          style="grid-template-columns: repeat(15, 1fr)"
+        >
+          <div style="grid-column: 1/8; grid-row: 1/2; align-self: center">
+            <p class="bg-neutral-100 about-us">
+              <span class="text-accent-100 fw-bold">"FURNITURE"</span> – "Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."<br />
+              <br />
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum."<br />
+              <br />
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            </p>
+          </div>
+          <div style="grid-column: 5/-1; grid-row: 1/2; align-self: center">
+            <img
+              src="images/Rectangle174.png"
+              style="z-index: -2; height: 100%"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-bottom" style="--margin-bottom: 3rem">
+        <div class="container">
+          <div class="margin-bottom flex" style="justify-content: center">
+            <div class="accent_heading flex" style="align-items: center">
+              <h2 class="fs-secondary-heading fw-bold highInd">
+                Залишились запитання?
+              </h2>
+            </div>
+          </div>
+
+          <div class="grid" style="grid-template-columns: repeat(6, 1fr)">
+            <div
+              class="z-index"
+              style="grid-column: 1/6; align-self: center; grid-row: 1/2"
+            >
+              <img src="images/Rectangle 175.png" alt="" />
+            </div>
+
+            <div
+              class="question bg-neutral-100 flex flex-column centred-flex flow-top"
+              style="grid-column: 5/7; grid-row: 1/2"
+            >
+              <h3 class="fw-bold fs-primary-heading widthFull margin-bottom-XS">
+                Замовте консультацію
+              </h3>
+              <form
+                class="flex flex-column centred-flex flow-top"
+                action=""
+                method="post"
+              >
+                <input
+                  class="input widthFull margin-bottom-XS"
+                  name="name"
+                  type="text"
+                  placeholder="Ім'я"
+                />
+                <input
+                  class="input widthFull margin-bottom-XS"
+                  name="phone"
+                  type="tel"
+                  placeholder="Номер телефону"
+                />
+                <button type="submit" class="button bg-neutral-500 widthFull">
+                  Відправити
+                </button>
+              </form>
+              <p>
+                Залиште заявку або телефонуйте за номером
+                <span class="fw-bold">(099) 111 22 33</span>, і наш менеджер
+                звяжеться з вами для кваліфікованої консультації.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-neutral-900">
+      <div class="container">
+        <div class="flex">
+          <div class="flex flex-column justify-between" style="flex: 0.7">
+            <div>
+              <!-- logo -->
+              <div
+                class="flex margin-bottom margin-top"
+                style="
+                  align-items: center;
+                  --margin-bottom: 2rem;
+                  --margin-top: 2rem;
+                "
+              >
+                <img src="images/logo2.svg" alt="" />
+                <p class="logo-span text-white fw-bold fs-primary-heading">
+                  Furniture.test
+                </p>
+              </div>
+              <!-- logo -->
+              <!-- list_of_ref -->
+              <div class="flex" style="gap: 2rem">
+                <ul role="list" class="flow-top">
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >Дивани</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >ліжка</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >крісла</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >шафи</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >кухні</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >комоди</a
+                    >
+                  </li>
+                </ul>
+
+                <ul role="list" class="flow-top">
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >Акції</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >доставка та оплата</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >про нас</a
+                    >
+                  </li>
+                  <li>
+                    <span
+                      class="text-accent-100 fw-bold"
+                      style="margin-right: 5px"
+                      >-</span
+                    ><a
+                      class="text-white fw-bold line-height-22 uppercase"
+                      href=""
+                      >контакти</a
+                    >
+                  </li>
+                </ul>
+
+                <!-- list_of_ref -->
+
+                <!-- contacts -->
+                <div class="flow-top">
+                  <p class="text-white line-height-22">
+                    <i class="fa-solid fa-location-dot"></i>Test
+                  </p>
+                  <p class="text-white line-height-22">
+                    <i class="fa-regular fa-calendar"></i>Пн-Пт, з 10 до 18
+                  </p>
+                  <p class="text-accent-100 line-height-22">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    (099) 111 22 33 <br />
+                    <i
+                      class="fa-solid fa-mobile-screen-button"
+                      style="opacity: 0"
+                    ></i>
+                    (099) 222 33 44
+                  </p>
+
+                  <!-- we in social media -->
+                  <p class="text-white line-height-22">
+                    Ми в соціальних мережах:
+                  </p>
+                  <ul role="list" class="flex" style="gap: 1rem">
+                    <li>
+                      <a class="text-white fw-bold" href=""
+                        ><i class="fa-solid fa-paper-plane"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-white fw-bold" href=""
+                        ><i class="fa-brands fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a class="text-white fw-bold" href=""
+                        ><i class="fa-brands fa-instagram"></i
+                      ></a>
+                    </li>
+                  </ul>
+                  <!-- we in social media -->
+                </div>
+                <!-- contacts -->
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <p class="text-white">© ТОВ Furniture, працюємо з 2006 року</p>
+              <p class="text-white flex">
+                <img src="images/Glogo.svg" alt="" />Глянець — розробка
+                інтернет-магазинів
+              </p>
+            </div>
+          </div>
+          <div style="flex: 1">
+            <img
+              style="width: 100%; height: 100%"
+              src="images/Rectangle176.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-const track = document.querySelector('.track')
+const track = document.querySelector('.carusel_track')
 const slides = Array.from(track.children)
 
 const slideWidth = slides[0].getBoundingClientRect().width
@@ -18,6 +18,7 @@ const moveToSlide = (track, currentSlide, targetSlide) => {
 }
 
 nextButton.addEventListener('click', () => {
+  console.log('sdsd')
   const currentSlide = track.querySelector('.current-slide')
   const nextSlide = currentSlide.nextElementSibling
 

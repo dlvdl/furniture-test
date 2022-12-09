@@ -402,23 +402,6 @@ body {
   background-color: var(--clr-accent-100);
 }
 
-.carusel {
-  width: 100%;
-  gap: var(--size-2);
-}
-
-.carusel-item {
-  flex: 1;
-  width: 100%;
-  height: 350px;
-}
-
-.background-truck {
-  background-image: url(images/Rectangle\ 172.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .uderlined {
   position: relative;
   width: fit-content;
@@ -432,19 +415,6 @@ body {
   height: 5px;
   background-color: var(--clr-accent-100);
   bottom: -3px;
-}
-
-.carusel-item {
-  cursor: pointer;
-}
-
-.carusel-item p {
-  font-size: 0;
-  transition: color 12s, font-size 0.5s;
-}
-
-.carusel-item:hover p {
-  font-size: var(--fs-400);
 }
 
 .category-item-heading {
@@ -592,9 +562,46 @@ body {
   z-index: -2;
 }
 
+/* Carusel */
+
+.carusel {
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carusel_track-container {
+  background-color: aqua;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carusel_track {
+  width: 100%;
+  height: 100%;
+}
+
+.carusel_slide {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.background-truck {
+  background-image: url(images/Rectangle\ 172.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: 100%;
+}
+
 .carusel-button {
   padding: 0.5rem;
   position: absolute;
+
   top: 45%;
   background-color: transparent;
   border: none;

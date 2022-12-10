@@ -571,7 +571,6 @@ body {
 }
 
 .carusel_track-container {
-  background-color: aqua;
   height: 100%;
   width: 100%;
   position: relative;
@@ -580,6 +579,7 @@ body {
 .carusel_track {
   width: 100%;
   height: 100%;
+  transition: transform 0.25s ease-in;
 }
 
 .carusel_slide {
@@ -590,12 +590,22 @@ body {
   position: absolute;
 }
 
-.background-truck {
-  background-image: url(images/Rectangle\ 172.svg);
+.carusel-item-background {
   background-repeat: no-repeat;
   background-size: cover;
-
   width: 100%;
+}
+
+.img-1 {
+  background-image: url(images/Rectangle\ 172.svg);
+}
+
+.img-2 {
+  background-image: url(images/Rectangle\ 169.png);
+}
+
+.img-3 {
+  background-image: url(images/Rectangle\ 170.png);
 }
 
 .carusel-button {
@@ -610,7 +620,7 @@ body {
 }
 
 .carusel-button:hover {
-  background-color: var(--clr-neutral-900);
+  border: 1px solid var(--clr-neutral-100);
 }
 
 /* ------------------- */

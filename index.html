@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.5" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Document</title>
     <script
       src="https://kit.fontawesome.com/3d96b58fae.js"
@@ -18,9 +18,12 @@
     ></script>
   </head>
   <body>
-    <header class="primary-header">
+    <header class="primary-header margin-bottom">
       <div class="container">
-        <nav class="primary-navigation flex justify-center">
+        <nav
+          class="primary-navigation flex justify-center margin-bottom"
+          style="--margin-bottom: 1rem"
+        >
           <ul role="list" class="nav-list flex flow-right">
             <li class="nav-list-item flex flow-right">
               <p class="fw-bold fs-body">Ми в соціальних мережах:</p>
@@ -73,13 +76,8 @@
           class="secondary-navigation flex justify-between align-center"
           style="gap: 1rem"
         >
-          <div>
-            <button
-              class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22 toggle-category-button"
-            >
-              Категорії <i class="fa-solid fa-chevron-down"></i>
-            </button>
-            <ul role="list" class="flex flow-not-a-last category">
+          <div class="category">
+            <ul role="list" class="flex flow-not-a-last">
               <li>
                 <button
                   class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22"
@@ -125,15 +123,20 @@
             </ul>
           </div>
 
-          <div class="logo flex">
-            <img href="" src="images/Group.svg" /><span
+          <div class="logo flex align-center">
+            <img src="images/Group.svg" alt="logo" /><span
               class="fw-bold fs-primary-heading logo-span"
               >Furniture.test</span
             >
+            <button
+              class="drop-down-button bg-neutral-100 text-accent-500 fw-bold uppercase line-height-22 toggle-category-button"
+            >
+              Категорії <i class="fa-solid fa-chevron-down"></i>
+            </button>
           </div>
 
-          <div class="flex flow-not-a-last align-center" style="gap: 1rem">
-            <div class="flex">
+          <div class="call-and-cart flex flow-not-a-last align-center">
+            <div class="flex align-center">
               <i class="fa-solid fa-cart-shopping cart-logo"></i>
               <span class="fw-bold fs-body uppercase cart-span">Кошик</span>
             </div>
@@ -146,7 +149,7 @@
     </header>
 
     <main>
-      <section class="margin-bottom" style="--margin-bottom: 6rem">
+      <section class="margin-bottom">
         <div class="container">
           <div class="image-wrap">
             <div
@@ -169,33 +172,61 @@
               </p>
               <a href="" class="button bg-neutral-500">Детальніше</a>
               <div class="flex flex-column centred-flex">
-                <p class="fs-secondary-body fw-bold align-text-center">
+                <p
+                  class="fs-secondary-body fw-bold align-text-center"
+                  id="slide-counter"
+                >
                   <span class="fs-primary-heading">01</span>/<span class=""
                     >04</span
                   >
                 </p>
-                <div class="slide_control flex justify-center">
+                <div
+                  class="slide_control flex justify-center"
+                  style="gap: 0.5rem"
+                >
                   <button
-                    class="flex flex-column align-center round-button bg-neutral-100 transparent-bg"
+                    class="newbie-button flex flex-column align-center round-button transparent-bg text-accent-500"
                     id="newbie-prev"
                   >
                     <i class="fa-solid fa-chevron-left"></i>
                   </button>
                   <button
-                    class="flex flex-column align-center round-button bg-neutral-900 text-white"
+                    class="newbie-button flex flex-column align-center round-button transparent-bg text-accent-500"
                     id="newbie-next"
                   >
                     <i class="fa-solid fa-chevron-right"></i>
                   </button>
-                  <div></div>
                 </div>
               </div>
+            </div>
+            <div class="carusel_track-container newbie-carusel">
+              <ul
+                role="list"
+                class="carusel_track"
+                style="z-index: -1"
+                id="newbie-track"
+              >
+                <li class="carusel_slide current-slide">
+                  <img
+                    style="width: 100%; height: auto"
+                    src="images/Rectangle137.png"
+                    alt="carusel_image"
+                  />
+                </li>
+                <li class="carusel_slide">
+                  <img
+                    style="width: 100%; height: auto"
+                    src="images/Rectangle137.png"
+                    alt="carusel_image"
+                  />
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="margin-bottom" style="--margin-bottom: 6rem">
+      <section class="margin-bottom">
         <div class="container relative" style="min-height: 400px">
           <div class="flex flex-column centred-flex">
             <div
@@ -222,14 +253,14 @@
                 <i class="fa-solid fa-chevron-right"></i>
               </button>
               <div class="carusel_track-container">
-                <ul role="list" class="carusel_track">
+                <ul role="list" class="carusel_track" id="carusel-track">
                   <li
                     class="carusel_slide flex current-slide"
                     style="gap: 1rem"
                   >
                     <div class="carusel-item-background img-1">
                       <h3
-                        class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                        class="underlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
                       >
                         Меблі преміум класу
                       </h3>
@@ -240,7 +271,7 @@
                     </div>
                     <div class="carusel-item-background img-2">
                       <h3
-                        class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                        class="underlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
                       >
                         Меблі преміум класу
                       </h3>
@@ -251,7 +282,7 @@
                     </div>
                     <div class="carusel-item-background img-3">
                       <h3
-                        class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                        class="underlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
                       >
                         Меблі преміум класу
                       </h3>
@@ -264,7 +295,7 @@
                   <li class="carusel_slide flex" style="gap: 1rem">
                     <div class="carusel-item-background img-2">
                       <h3
-                        class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                        class="underlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
                       >
                         Меблі преміум класу
                       </h3>
@@ -275,7 +306,7 @@
                     </div>
                     <div class="carusel-item-background img-3">
                       <h3
-                        class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                        class="underlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
                       >
                         Меблі преміум класу
                       </h3>
@@ -286,7 +317,7 @@
                     </div>
                     <div class="carusel-item-background img-1">
                       <h3
-                        class="uderlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
+                        class="underlined fs-primary-heading fw-bold text-accent-400 underline align-text-start push-left margin-bottom-XS"
                       >
                         Меблі преміум класу
                       </h3>
@@ -303,7 +334,7 @@
         </div>
       </section>
 
-      <section class="margin-bottom" style="--margin-bottom: 6rem">
+      <section class="margin-bottom">
         <div class="container">
           <div
             class="margin-bottom flex justify-center"
@@ -320,79 +351,89 @@
             class="category-list flex justify-between margin-bottom"
             style="gap: 1rem; --margin-bottom: 1.5rem"
           >
-            <li class="category-list-item flex flex-column align-center">
-              <img
-                class="category-item-image"
-                src="images/living-room 1.svg"
-                alt=""
-              />
-              <p
-                class="category-item-heading fs-secondary-body fw-bold uppercase"
+            <li class="category-list-item">
+              <a class="flex flex-column align-center" href=""
+                ><img
+                  class="category-item-image"
+                  src="images/living-room1.svg"
+                  alt="category-list-image"
+                />
+                <p
+                  class="category-item-heading fs-secondary-body fw-bold uppercase"
+                >
+                  Дивани
+                </p></a
               >
-                Дивани
-              </p>
             </li>
-            <li class="category-list-item flex flex-column align-center">
-              <img
-                class="category-item-image"
-                src="images/armchair.svg"
-                alt=""
-              />
-              <p
-                class="category-item-heading fs-secondary-body fw-bold uppercase"
-              >
-                Крісла
-              </p>
+            <li class="category-list-item">
+              <a class="flex flex-column align-center" href="">
+                <img
+                  class="category-item-image"
+                  src="images/armchair.svg"
+                  alt="category-list-image"
+                />
+                <p
+                  class="category-item-heading fs-secondary-body fw-bold uppercase"
+                >
+                  Крісла
+                </p>
+              </a>
             </li>
-            <li class="category-list-item flex flex-column align-center">
-              <img
-                class="category-item-image"
-                src="images/wardrobe (1) 1.svg"
-                alt=""
-              />
-              <p
-                class="category-item-heading fs-secondary-body fw-bold uppercase"
-              >
-                комоди
-              </p>
+            <li class="category-list-item">
+              <a class="flex flex-column align-center" href="">
+                <img
+                  class="category-item-image"
+                  src="images/wardrobe(1)1.svg"
+                  alt="category-list-image"
+                />
+                <p
+                  class="category-item-heading fs-secondary-body fw-bold uppercase"
+                >
+                  комоди
+                </p>
+              </a>
             </li>
-            <li class="category-list-item flex flex-column align-center">
-              <img
-                class="category-item-image"
-                src="images/wardrobe 1.svg"
-                alt=""
-              />
-              <p
-                class="category-item-heading fs-secondary-body fw-bold uppercase"
-              >
-                Шафи
-              </p>
+            <li class="category-list-item">
+              <a class="flex flex-column align-center" href="">
+                <img
+                  class="category-item-image"
+                  src="images/wardrobe1.svg"
+                  alt="category-list-image"
+                />
+                <p
+                  class="category-item-heading fs-secondary-body fw-bold uppercase"
+                >
+                  Шафи
+                </p>
+              </a>
             </li>
-            <li
-              class="category-list-item flex flex-column justify-center align-center"
-            >
-              <img
-                class="category-item-image"
-                src="images/kitchen 1.svg"
-                alt=""
-              />
-              <p
-                class="category-item-heading fs-secondary-body fw-bold uppercase"
-              >
-                Кухня
-              </p>
+            <li class="category-list-item">
+              <a class="flex flex-column align-center" href="">
+                <img
+                  class="category-item-image"
+                  src="images/kitchen1.svg"
+                  alt="category-list-image"
+                />
+                <p
+                  class="category-item-heading fs-secondary-body fw-bold uppercase"
+                >
+                  Кухня
+                </p>
+              </a>
             </li>
-            <li class="category-list-item flex flex-column align-center">
-              <img
-                class="category-item-image dark-filter dark-filter-2"
-                src="images/bedroom 1.svg"
-                alt=""
-              />
-              <p
-                class="category-item-heading fs-secondary-body fw-bold uppercase"
-              >
-                Ліжка
-              </p>
+            <li class="category-list-item">
+              <a class="flex flex-column align-center" href="">
+                <img
+                  class="category-item-image dark-filter dark-filter-2"
+                  src="images/bedroom1.svg"
+                  alt="category-list-image"
+                />
+                <p
+                  class="category-item-heading fs-secondary-body fw-bold uppercase"
+                >
+                  Ліжка
+                </p>
+              </a>
             </li>
           </ul>
           <div>
@@ -400,7 +441,10 @@
               <li class="product-list-item relative">
                 <a href="">
                   <div class="product-list-item-image">
-                    <img src="images/Rectangle 140.png" alt="" />
+                    <img
+                      src="images/Rectangle140.png"
+                      alt="category-list-image"
+                    />
                   </div>
                   <div class="state-box absolute">
                     <p class="product-state bg-neutral-900 uppercase">
@@ -420,7 +464,10 @@
               <li class="product-list-item relative">
                 <a href="">
                   <div class="product-list-item-image">
-                    <img src="images/Rectangle 140.png" alt="" />
+                    <img
+                      src="images/Rectangle140.png"
+                      alt="product-list-image"
+                    />
                   </div>
                   <div class="state-box absolute">
                     <p class="product-state bg-neutral-900 uppercase">
@@ -450,7 +497,10 @@
               <li class="product-list-item relative">
                 <a href="">
                   <div class="product-list-item-image">
-                    <img src="images/Rectangle 140.png" alt="" />
+                    <img
+                      src="images/Rectangle140.png"
+                      alt="product-list-image"
+                    />
                   </div>
                   <div class="state-box absolute"></div>
                   <div class="flex justify-between fw-bold fs-secondary-body">
@@ -464,7 +514,10 @@
               <li class="product-list-item relative">
                 <a href="">
                   <div class="product-list-item-image">
-                    <img src="images/Rectangle 140.png" alt="" />
+                    <img
+                      src="images/Rectangle140.png"
+                      alt="product-list-image"
+                    />
                   </div>
                   <div class="state-box absolute">
                     <p class="product-state bg-neutral-900 uppercase">
@@ -482,7 +535,10 @@
               <li class="product-list-item relative">
                 <a href="">
                   <div class="product-list-item-image">
-                    <img src="images/Rectangle 140.png" alt="" />
+                    <img
+                      src="images/Rectangle140.png"
+                      alt="product-list-image"
+                    />
                   </div>
                   <div class="state-box absolute"></div>
                   <div class="flex justify-between fw-bold fs-secondary-body">
@@ -496,7 +552,10 @@
               <li class="product-list-item relative">
                 <a href="">
                   <div class="product-list-item-image">
-                    <img src="images/Rectangle 140.png" alt="" />
+                    <img
+                      src="images/Rectangle140.png"
+                      alt="product-list-image"
+                    />
                   </div>
                   <div class="state-box absolute">
                     <p class="product-state bg-neutral-900 uppercase">
@@ -525,7 +584,7 @@
         </div>
       </section>
 
-      <section class="margin-bottom" style="--margin-bottom: 6rem">
+      <section class="margin-bottom">
         <div
           class="margin-bottom flex justify-center"
           style="--margin-bottom: 1.5rem"
@@ -536,10 +595,10 @@
         </div>
 
         <div
-          class="container grid"
+          class="container grid about-us-block"
           style="grid-template-columns: repeat(15, 1fr)"
         >
-          <div style="grid-column: 1/8; grid-row: 1/2; align-self: center">
+          <div class="about-us-text">
             <p class="bg-neutral-100 about-us">
               <span class="text-accent-100 fw-bold">"FURNITURE"</span> – "Lorem
               ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -564,17 +623,20 @@
               nisi ut aliquip ex ea commodo consequat. Duis aute irure
             </p>
           </div>
-          <div style="grid-column: 5/-1; grid-row: 1/2; align-self: center">
+          <div
+            class="about-us-picture"
+            style="grid-column: 5/-1; grid-row: 1/2; align-self: center"
+          >
             <img
               src="images/Rectangle174.png"
               style="z-index: -2; height: 100%"
-              alt=""
+              alt="about-us-image"
             />
           </div>
         </div>
       </section>
 
-      <section class="margin-bottom" style="--margin-bottom: 3rem">
+      <section class="margin-bottom">
         <div class="container">
           <div class="margin-bottom flex" style="justify-content: center">
             <div class="accent_heading flex" style="align-items: center">
@@ -584,24 +646,20 @@
             </div>
           </div>
 
-          <div class="grid" style="grid-template-columns: repeat(6, 1fr)">
-            <div
-              class="z-index"
-              style="grid-column: 1/6; align-self: center; grid-row: 1/2"
-            >
-              <img src="images/Rectangle 175.png" alt="" />
+          <div class="grid question-block">
+            <div class="question-image">
+              <img src="images/Rectangle175.png" alt="get-touch-image" />
             </div>
 
             <div
               class="question bg-neutral-100 flex flex-column centred-flex flow-top"
-              style="grid-column: 5/7; grid-row: 1/2"
             >
               <h3 class="fw-bold fs-primary-heading widthFull margin-bottom-XS">
                 Замовте консультацію
               </h3>
               <form
                 class="flex flex-column centred-flex flow-top"
-                action=""
+                action="action.php"
                 method="post"
               >
                 <input
@@ -633,145 +691,153 @@
 
     <footer class="bg-neutral-900">
       <div class="container">
-        <div class="flex">
-          <div class="flex flex-column justify-between" style="flex: 0.7">
-            <div>
-              <!-- logo -->
-              <div
-                class="flex margin-bottom margin-top"
-                style="
-                  align-items: center;
-                  --margin-bottom: 2rem;
-                  --margin-top: 2rem;
-                "
-              >
-                <img src="images/logo2.svg" alt="" />
-                <p class="logo-span text-white fw-bold fs-primary-heading">
-                  Furniture.test
-                </p>
+        <div class="flex justify-center relative" style="gap: 1rem">
+          <div class="return-button bg-neutral-500 text-white">
+            <i class="fa-solid fa-arrow-up"></i>
+          </div>
+          <div class="flex flex-column justify-between footer-links">
+            <div
+              class="flex margin-bottom margin-top footer-logo"
+              style="
+                align-items: center;
+                --margin-bottom: 2rem;
+                --margin-top: 2rem;
+              "
+            >
+              <img src="images/logo2.svg" alt="logo" />
+              <p class="logo-span text-white fw-bold fs-primary-heading">
+                Furniture.test
+              </p>
+            </div>
+
+            <div class="flex justify-between" style="gap: 2rem">
+              <div class="flex flex-column justify-between" style="gap: 4rem">
+                <div class="flex" style="gap: 1rem">
+                  <ul role="list" class="flow-top">
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >Дивани</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >ліжка</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >крісла</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >шафи</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >кухні</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >комоди</a
+                      >
+                    </li>
+                  </ul>
+
+                  <ul role="list" class="flow-top">
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >Акції</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >доставка та оплата</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >про нас</a
+                      >
+                    </li>
+                    <li>
+                      <span
+                        class="text-accent-100 fw-bold"
+                        style="margin-right: 5px"
+                        >-</span
+                      ><a
+                        class="text-white fw-bold line-height-22 uppercase"
+                        href=""
+                        >контакти</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <p class="text-white">
+                    © ТОВ Furniture, працюємо з 2006 року
+                  </p>
+                </div>
               </div>
-              <!-- logo -->
-              <!-- list_of_ref -->
-              <div class="flex" style="gap: 2rem">
-                <ul role="list" class="flow-top">
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >Дивани</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >ліжка</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >крісла</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >шафи</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >кухні</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >комоди</a
-                    >
-                  </li>
-                </ul>
 
-                <ul role="list" class="flow-top">
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >Акції</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >доставка та оплата</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >про нас</a
-                    >
-                  </li>
-                  <li>
-                    <span
-                      class="text-accent-100 fw-bold"
-                      style="margin-right: 5px"
-                      >-</span
-                    ><a
-                      class="text-white fw-bold line-height-22 uppercase"
-                      href=""
-                      >контакти</a
-                    >
-                  </li>
-                </ul>
-
-                <!-- list_of_ref -->
-
-                <!-- contacts -->
+              <div class="flex flex-column justify-between">
                 <div class="flow-top">
                   <p class="text-white line-height-22">
                     <i class="fa-solid fa-location-dot"></i>Test
@@ -810,20 +876,20 @@
                       ></a>
                     </li>
                   </ul>
-                  <!-- we in social media -->
                 </div>
-                <!-- contacts -->
+                <div>
+                  <div class="flex align-center" style="flex-wrap: wrap">
+                    <div class="flex">
+                      <img src="images/Glogo.svg" alt="" />
+                      <p class="text-white">Глянець</p>
+                    </div>
+                    <p class="text-white">— розробка інтернет-магазинів</p>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="flex justify-between">
-              <p class="text-white">© ТОВ Furniture, працюємо з 2006 року</p>
-              <p class="text-white flex">
-                <img src="images/Glogo.svg" alt="" />Глянець — розробка
-                інтернет-магазинів
-              </p>
-            </div>
           </div>
-          <div style="flex: 1">
+          <div class="footer-image">
             <img
               style="width: 100%; height: 100%"
               src="images/Rectangle176.png"
@@ -833,6 +899,6 @@
         </div>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="src/main.js"></script>
   </body>
 </html>

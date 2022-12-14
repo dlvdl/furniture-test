@@ -757,6 +757,10 @@ body {
     flex-direction: column;
   }
 
+  .header-social {
+    flex-direction: column;
+  }
+
   .newbie {
     grid-column: 1/-1;
     grid-row: 1;

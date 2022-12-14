@@ -736,6 +736,9 @@ body {
 }
 
 @media (max-width: 1200px) {
+  image-wrap {
+    grid-template-rows: 1fr 4fr;
+  }
   .newbie {
     grid-column: 1/7;
     grid-row: 1/-1;
@@ -768,9 +771,10 @@ body {
   .button {
     padding: 0.4rem 0.4rem;
   }
+
   .newbie {
     grid-column: 1/-1;
-    grid-row: 1;
+    grid-row: 1/-1;
     background-color: transparent;
   }
 
@@ -780,7 +784,7 @@ body {
 
   .carusel_slide {
     flex-direction: column;
-    opacity: 0.85;
+    opacity: 0.75;
   }
 
   .about-us-text {

@@ -747,6 +747,11 @@ body {
   .product-list {
     grid-template-columns: 2fr 2fr;
   }
+
+  .carusel_slide {
+    flex-direction: column;
+    opacity: 0.75;
+  }
 }
 
 @media (max-width: 1000px) {

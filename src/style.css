@@ -752,6 +752,10 @@ body {
     flex-direction: column;
     opacity: 0.75;
   }
+
+  .bottom-logo-text {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {
